@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "downloader"
+version = "0.1.0"
+description = ""
+authors = ["1twalters01 <1twalters01>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+run = "src.main:main"
+search = "src.subfile:main"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pytube = "^15.0.0"
+pytubefix = "^8.12.1"
+
+[[tool.poetry.packages]]
+include = "src"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
